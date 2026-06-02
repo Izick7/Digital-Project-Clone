@@ -78,38 +78,258 @@
     </section>
 
     <!-- About Section -->
-    <section class="flex flex-col md:flex-row items-center justify-between ">
+    <section class="flex flex-col md:flex-row items-center justify-between gap-10 md:gap-20 md:px-12 py-12">
         <!-- Left Images -->
-        <div class="flex ">
-            <div>
-                <img src="src/images/about-image-1.png" alt="about-image">
-                <img src="src/images/about-image-2.png" alt="about-image">
+        <div class="flex flex-col sm:flex-row gap-6 w-full md:w-1/2">
+            <div class=" flex flex-col gap-6 flex-1">
+                <img src="src/images/about-image-1.png" alt="about-image" class="w-full h-auto object-cover">
+                <img src="src/images/about-image-2.png" alt="about-image" class="w-full h-auto object-cover">
             </div>
-            <img src="src/images/about-image-3.png" alt="about-image">
+            <div class="flex-1 flex items-center">
+                <img src="src/images/about-image-3.png" alt="about-image"
+                    class="w-full max-w-[400px] md:max-w-full h-auto object-cover">
+            </div>
         </div>
 
         <!-- Right Content -->
-
-
-        <div>
-            <h2>About</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the<br>
-                industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and<br>
-                scrambled it to make a type specimen book. It has<br> survived not only five centuries, but also the leap
-                into<br> electronic typesetting, remaining essentially unchanged.
+        <div class="w-full md:w-1/2 max-w-lg md:items-center">
+            <h2 class="text-[#BDBDBD] text-4xl md:text-5xl font-light mb-6">About</h2>
+            <p class="leading-7 mb-8">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged.
             </p>
-
-             <button class=" bg-white px-6 py-4 flex items-center gap-3 shadow-md">
+            <button class=" bg-white px-6 py-4 flex items-center gap-3 shadow-md border border-gray-200">
 
                 READ MORE
 
                 <i class="fa-solid fa-arrow-right"></i>
-
             </button>
         </div>
     </section>
 
+    <!-- Mission Statement Section -->
+    <section class="px-6 md:px-12 lg:px-20 py-16 bg-white">
+        <h2 class="text-[#BDBDBD] text-3xl md:text-5xl font-light mb-12">Main Focus/Mission Statement</h2>
+        <div class="flex flex-col md:flex-row gap-10 md:gap-24">
+            <!-- Left Content -->
+            <div class="flex items-start gap-6 w-full md:w-1/2">
+                <p class="text-[120px] leading-none font-black text-[#F2F2F2]">1</p>
+                <p class="leading-relaxed max-w-xs pt-6">
+                    Lorem ipsum dolor sit amet,<br> consectetur
+                    adipiscing elit.<br> Sed efficitur,
+                    lectus et<br>facilisis placerat.
+                </p>
+            </div>
+
+            <!-- Right Content -->
+            <div class="flex items-start gap-6 w-full md:w-1/2">
+                <p class="text-[120px] leading-none font-black text-[#F2F2F2]">2</p>
+                <p class="leading-relaxed max-w-sm pt-6">
+                    Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit.
+                    Sed efficitur, lectus et<br> facilisis placerat,
+                    magna mauris porttitor<br> tortor, a auctor est felis ut nisl.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PROJECTS SECTION -->
+    <section class="px-6 md:px-12 lg:px-20 py-16">
+
+        <!-- HEADING -->
+        <h2 class="text-[#BDBDBD] text-3xl md:text-5xl font-light mb-12">
+            Our Projects
+        </h2>
+
+        <!-- PROJECT GRID -->
+        <div class="flex flex-col gap-6">
+
+            <!-- TOP ROW -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <img src="src/images/project-pic1.png" alt="project-image" class="w-full h-[250px] object-cover">
+
+                <img src="src/images/project-pic2.png" alt="project-image" class="w-full h-[250px] object-cover">
+
+            </div>
+
+            <!-- BOTTOM ROW -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <img src="src/images/project-pic3.png" alt="project-image" class="w-full h-[220px] object-cover">
+
+                <img src="src/images/project-pic4.png" alt="project-image" class="w-full h-[220px] object-cover">
+
+                <img src="src/images/project-pic5.png" alt="project-image" class="w-full h-[220px] object-cover">
+
+            </div>
+
+        </div>
+
+        <!-- BUTTON -->
+        <div class="flex justify-end mt-10">
+
+            <button class="bg-black text-white px-6 py-4 flex items-center gap-3 tracking-[2px] text-sm">
+
+                ALL PROJECTS
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="px-6 md:px-12 lg:px-20 py-16">
+
+    <!-- Heading -->
+    <h2 class="text-[#BDBDBD] text-4xl md:text-5xl font-light mb-10">
+        Contact Us
+    </h2>
+
+    <!-- Form + Image Container -->
+    <div class="flex flex-col md:flex-row gap-10 md:gap-12">
+
+        <!-- Form -->
+        <div class="w-full md:w-2/5">
+
+            <form class="flex flex-col gap-4">
+
+                <input
+                    type="text"
+                    placeholder="Name"
+                    class="bg-[#F3F3F3] px-4 py-3 outline-none"
+                >
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number*"
+                    class="bg-[#F3F3F3] px-4 py-3 outline-none"
+                >
+
+                <input
+                    type="email"
+                    placeholder="E-mail*"
+                    class="bg-[#F3F3F3] px-4 py-3 outline-none"
+                >
+
+                <input
+                    type="text"
+                    placeholder="Interested In"
+                    class="bg-[#F3F3F3] px-4 py-3 outline-none"
+                >
+
+                <textarea
+                    placeholder="Message*"
+                    rows="6"
+                    class="bg-[#F3F3F3] px-4 py-3 outline-none resize-none"
+                ></textarea>
+
+            </form>
+
+            <button
+                class="mt-8 bg-[#333333] text-white px-8 py-4 flex items-center gap-3 tracking-[2px] text-sm"
+            >
+                SEND EMAIL
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Image -->
+        <div class="w-full md:w-3/5">
+
+            <img
+                src="src/images/contact-img.png"
+                alt="contact-image"
+                class="w-full h-[250px] md:h-full object-cover"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+   <!-- FOOTER -->
+<footer class="bg-[#2C2C2C] text-white mt-20">
+
+    <div class="flex flex-col md:flex-row items-start justify-between gap-10 px-6 md:px-12 lg:px-20 py-16">
+
+        <!-- LOGO -->
+        <div>
+            <img
+                src="src/images/footerlogo.png"
+                alt="logo"
+                class="w-24 h-auto"
+            >
+        </div>
+
+        <!-- INFORMATION -->
+        <div class="flex flex-col gap-4">
+            <h4 class="font-semibold mb-2">Information</h4>
+
+            <a href="#">Main</a>
+            <a href="#">Gallery</a>
+            <a href="#">Projects</a>
+            <a href="#">Certifications</a>
+            <a href="#">Contacts</a>
+        </div>
+
+        <!-- CONTACTS -->
+        <div class="flex flex-col gap-4 max-w-xs">
+
+            <h4 class="font-semibold mb-2">
+                Contacts
+            </h4>
+
+            <div class="flex items-start gap-3">
+                <img src="src/images/Vector.png" alt="">
+                <p>1234 Sample Street<br>Austin Texas 78704</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="src/images/telephone.png" alt="">
+                <span>512.333.2222</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="src/images/email.png" alt="">
+                <span>sampleemail@gmail.com</span>
+            </div>
+
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="flex flex-col gap-6">
+
+            <h4 class="font-semibold">
+                Social Media
+            </h4>
+
+            <div class="flex gap-6">
+                <img src="src/images/facebook.png" alt="">
+                <img src="src/images/twitter.png" alt="">
+                <img src="src/images/Linked In.png" alt="">
+                <img src="src/images/pininterest.png" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="border-t border-gray-700 py-4 text-center text-sm text-gray-400">
+
+        © 2021 All Rights Reserved
+
+    </div>
+
+</footer>
 
 </body>
 
