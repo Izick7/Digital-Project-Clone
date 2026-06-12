@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
-     <header class="flex items-center justify-between px-6 md:px-12 lg:px-20 py-6">
+    <header class="flex items-center justify-between px-6 md:px-12 lg:px-20 py-6">
 
         <!-- LOGO -->
         <img src="src/images/Group 8.png" alt="logo" class="w-16 h-auto">
         <nav class="hidden md:flex items-center gap-10 text-[11px] tracking-[3px] uppercase mx-24">
             <a href="#" class="border-b border-black pb-1">Main</a>
 
-            <a href="#">Gallery</a>
-            <a href="#">Projects</a>
-            <a href="#">Certifications</a>
-            <a href="#">Contacts </a>
+            <a href="gallery.html">Gallery</a>
+            <a href="projects.html">Projects</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="contact.html">Contacts </a>
         </nav>
 
         <!-- Hamburger Menu -->
@@ -32,159 +34,130 @@
 
     <section class="max-w-6xl mx-auto px-6 py-16">
 
-    <!-- Heading -->
-    <p class="text-3xl md:text-4xl font-light text-[#BDBDBD]">
-        Our
-    </p>
+        <!-- Heading -->
+        <p class="text-3xl md:text-4xl font-light text-[#BDBDBD]">
+            Our
+        </p>
 
-    <h2 class="text-4xl md:text-6xl font-bold text-black mb-12">
-        Projects
-    </h2>
+        <h2 class="text-4xl md:text-6xl font-bold text-black mb-12">
+            Projects
+        </h2>
 
-    <!-- Project 1 -->
-    <div
-        class="grid md:grid-cols-3 bg-[#FBFBFB] mb-8">
+        <!-- Project 1 -->
+        <div class="grid md:grid-cols-3 bg-[#FBFBFB] mb-8">
 
-        <!-- Image -->
-        <div class="md:col-span-2">
-            <img
-                src="src/images/project-img1.png"
-                alt="Project 1"
-                class="w-full h-full object-cover">
+            <!-- Image -->
+            <div class="md:col-span-2">
+                <img src="src/images/project-img1.png" alt="Project 1" class="w-full h-full object-cover">
+            </div>
+
+            <!-- Content -->
+            <div class="p-8 flex flex-col justify-center">
+
+                <h3 class="text-3xl font-light text-[#BDBDBD] mb-4">
+                    Sample Project
+                </h3>
+
+                <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+
+                <a href="#" class="uppercase tracking-widest text-xs flex items-center gap-2">
+                    View More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
         </div>
 
-        <!-- Content -->
-        <div
-            class="p-8 flex flex-col justify-center">
+        <!-- Project 2 -->
+        <div class="grid md:grid-cols-3 bg-[#FBFBFB] mb-8">
 
-            <h3
-                class="text-3xl font-light text-[#BDBDBD] mb-4">
-                Sample Project
-            </h3>
+            <div class="md:col-span-2">
+                <img src="src/images/project-img2.png" alt="Project 2" class="w-full h-full object-cover">
+            </div>
 
-            <p
-                class="text-sm text-gray-600 leading-relaxed mb-8">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-            </p>
+            <div class="p-8 flex flex-col justify-center">
 
-            <a
-                href="#"
-                class="uppercase tracking-widest text-xs flex items-center gap-2">
-                View More
+                <h3 class="text-3xl font-light text-[#BDBDBD] mb-4">
+                    Sample Project 2
+                </h3>
+
+                <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+
+                <a href="#" class="uppercase tracking-widest text-xs flex items-center gap-2">
+                    View More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+        <div class="grid md:grid-cols-3 bg-[#FBFBFB] mb-12">
+
+            <div class="md:col-span-2">
+                <img src="src/images/project-img3.png" alt="Project 3" class="w-full h-full object-cover">
+            </div>
+
+            <div class="p-8 flex flex-col justify-center">
+
+                <h3 class="text-3xl font-light text-[#BDBDBD] mb-4">
+                    Sample Project 3
+                </h3>
+
+                <p class="text-sm text-gray-600 leading-relaxed mb-8">
+                    Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.
+                </p>
+
+                <a href="#" class="uppercase tracking-widest text-xs flex items-center gap-2">
+                    View More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex items-center gap-6">
+
+            <span class="text-sm text-gray-500">
+                01
+            </span>
+
+            <span class="text-sm text-gray-300">
+                /
+            </span>
+
+            <span class="text-sm text-gray-300">
+                05
+            </span>
+
+            <button class="w-10 h-10 border flex items-center justify-center">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+
+            <button class="w-10 h-10 border bg-[#F9F9F9] flex items-center justify-center">
                 <i class="fa-solid fa-arrow-right"></i>
-            </a>
+            </button>
 
         </div>
 
-    </div>
-
-    <!-- Project 2 -->
-    <div
-        class="grid md:grid-cols-3 bg-[#FBFBFB] mb-8">
-
-        <div class="md:col-span-2">
-            <img
-                src="src/images/project-img2.png"
-                alt="Project 2"
-                class="w-full h-full object-cover">
-        </div>
-
-        <div
-            class="p-8 flex flex-col justify-center">
-
-            <h3
-                class="text-3xl font-light text-[#BDBDBD] mb-4">
-                Sample Project 2
-            </h3>
-
-            <p
-                class="text-sm text-gray-600 leading-relaxed mb-8">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-            </p>
-
-            <a
-                href="#"
-                class="uppercase tracking-widest text-xs flex items-center gap-2">
-                View More
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-    <!-- Project 3 -->
-    <div
-        class="grid md:grid-cols-3 bg-[#FBFBFB] mb-12">
-
-        <div class="md:col-span-2">
-            <img
-                src="src/images/project-img3.png"
-                alt="Project 3"
-                class="w-full h-full object-cover">
-        </div>
-
-        <div
-            class="p-8 flex flex-col justify-center">
-
-            <h3
-                class="text-3xl font-light text-[#BDBDBD] mb-4">
-                Sample Project 3
-            </h3>
-
-            <p
-                class="text-sm text-gray-600 leading-relaxed mb-8">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-            </p>
-
-            <a
-                href="#"
-                class="uppercase tracking-widest text-xs flex items-center gap-2">
-                View More
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-    <!-- Pagination -->
-    <div class="flex items-center gap-6">
-
-        <span class="text-sm text-gray-500">
-            01
-        </span>
-
-        <span class="text-sm text-gray-300">
-            /
-        </span>
-
-        <span class="text-sm text-gray-300">
-            05
-        </span>
-
-        <button
-            class="w-10 h-10 border flex items-center justify-center">
-            <i class="fa-solid fa-arrow-left"></i>
-        </button>
-
-        <button
-            class="w-10 h-10 border bg-[#F9F9F9] flex items-center justify-center">
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="bg-[#2C2C2C] text-white mt-20">
 
         <div class="flex flex-col md:flex-row items-start justify-between gap-10 px-6 md:px-12 lg:px-20 py-16">
@@ -255,6 +228,7 @@
         </div>
 
     </footer>
-    
+
 </body>
+
 </html>
